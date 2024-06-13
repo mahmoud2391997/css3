@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        position: absolute;
+      }
+      #bicycle {
+        top: 40px;
+        left: -10px;
+        animation-name: bicycle;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes bicycle {
+        0% {
+          left: -10px;
+        }
+        50% {
+          left: 90%;
+          transform: rotateY(0deg);
+        }
+        51% {
+          left: 90%;
+          transform: rotateY(180deg);
+        }
+        100% {
+          left: -10px;
+
+          transform: rotateY(180deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="./assets/straight-road-travel-concept-illustration-png.webp"
+        alt=""
+        width="98%"
+      />
+      <img
+        id="bicycle"
+        src="./assets/—Pngtree—cartoon characters ride bicycles_4141664.png"
+        alt=""
+        width="200"
+      />
+    </div>
+  </body>
+</html>

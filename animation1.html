@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100%;
+        position: relative;
+      }
+      img {
+        position: absolute;
+      }
+      #lPlayer {
+        left: 0;
+      }
+      #rPlayer {
+        left: 90%;
+      }
+      #ball {
+        top: 100px;
+        left: 100px;
+        animation-name: ball;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      #grass {
+        z-index: -1;
+        top: 20px;
+      }
+      @keyframes ball {
+        0% {
+          left: 100px;
+          transform: rotate(0deg);
+        }
+        100% {
+          left: 90%;
+          transform: rotate(720deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="./assets/player1.png" alt="" id="lPlayer" width="200" />
+      <img src="./assets/image.png" alt="" id="grass" />
+      <img src="./assets/player2.png" alt="" id="rPlayer" width="200" />
+      <img
+        src="./assets/Black-Red_Egyptian_Soccer_ball.png"
+        alt=""
+        width="50"
+        id="ball"
+      />
+    </div>
+  </body>
+</html>

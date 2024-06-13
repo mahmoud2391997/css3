@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #card {
+        width: 300px;
+        height: 600px;
+        border-radius: 30px;
+        border: 5px solid red;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .spade {
+        border-bottom: 100px solid black;
+        border-top: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-left: 100px solid transparent;
+      }
+      .spadeCurve {
+        background-color: transparent;
+        width: 200px;
+        border-bottom: 70px solid black;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      .spadeBase {
+        border-bottom: 80px solid black;
+        border-right: 50px solid transparent;
+        border-left: 50px solid transparent;
+        margin-top: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <div class="spade"></div>
+      <div class="spadeCurve"></div>
+      <div class="spadeBase"></div>
+    </div>
+  </body>
+</html>
